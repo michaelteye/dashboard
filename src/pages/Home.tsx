@@ -271,7 +271,7 @@ const Home = () => {
               <div className="pb-0  flex flex-1 justify-center ml-4  items-end">
                 <img
                   src={man}
-                  alt="Image"
+                  alt="text"
                   className="h-36"
                 />
               </div>
