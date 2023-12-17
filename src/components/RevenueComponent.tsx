@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
 import ApexCharts from 'apexcharts';
-import config, { Colors } from '../config/config';
+import { useEffect, useRef } from 'react';
+import config from '../config/config';
 
 const ChartComponent = () => {
   const profileReportChartEl = useRef(null);

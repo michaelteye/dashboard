@@ -1,6 +1,5 @@
-import React from "react";
+import sales from '../../components/images/icons/wallet-info.png';
 import { InfoProps } from "./SmallCards";
-import sales from '../../components/images/icons/wallet-info.png'
 
 const BigCards = ({ title, price, percent }: InfoProps) => {
   return (
@@ -21,8 +20,8 @@ const BigCards = ({ title, price, percent }: InfoProps) => {
         </svg>
       </div>
 
-      <p className="text-lg">{title}</p>
-      <h3 className="text-[#566a7f] text-[1.625rem] font-semibold">{price}</h3>
+      <p className="text-lg font-publicSans">{title}</p>
+      <h3 className="text-[#566a7f] text-[1.625rem] font-semibold font-publicSans">{price}</h3>
 
       <div className="flex space-x-0 text-[#71dd37] items-center">
         <svg
@@ -35,7 +34,7 @@ const BigCards = ({ title, price, percent }: InfoProps) => {
             d="M8 12a.5.5 0 00.5-.5V5.707l2.146 2.147a.5.5 0 00.708-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L7.5 5.707V11.5a.5.5 0 00.5.5z"
           />
         </svg>
-        <span>{percent}</span>
+        <span className="font-publicSans">{percent}</span>
       </div>
     </div>
   );

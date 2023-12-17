@@ -17,7 +17,7 @@ const SectionTwo: React.FC = () => {
           <div className="card">
             <div className="grid grid-cols-12 gap-0">
               <div className="col-span-12 md:col-span-8 ml-4 mt-4">
-                <h5 className="card-header m-0 me-2 pb-3">Total Revenue</h5>
+                <h5 className="card-header m-0 me-2 pb-3 font-Opensans">Total Revenue</h5>
                 <RevenueChart />
               </div>
               <div className="col-span-12 md:col-span-4 border-l-2">
@@ -25,7 +25,7 @@ const SectionTwo: React.FC = () => {
                   <div className="text-center">
                     <div className="dropdown">
                       <button
-                        className="inline-flex my-4 items-center border border-blue-500 text-blue-500 bg-white hover:bg-blue-500 hover:text-white font-semibold py-1 px-3 rounded-md text-sm focus:outline-none focus:ring focus:border-blue-300"
+                        className=" font-Opensans inline-flex my-4 items-center border border-blue-500 text-blue-500 bg-white hover:bg-blue-500 hover:text-white font-semibold py-1 px-3 rounded-md text-sm focus:outline-none focus:ring focus:border-blue-300"
                         type="button"
                       >
                         2022
@@ -49,7 +49,7 @@ const SectionTwo: React.FC = () => {
                   </div>
                 </div>
                 <GrowthChart />
-                <div className="text-center fw-medium pt-3 mb-2">
+                <div className="text-center fw-medium pt-3 mb-2 font-publicSans">
                   62% Company Growth
                 </div>
                 <div className="flex px-6 md:px-2 py-4 md:py-2 gap-3 justify-between">
@@ -61,19 +61,19 @@ const SectionTwo: React.FC = () => {
                       </span>
                     </div>
                     <div className="flex flex-col">
-                      <small>2022</small>
-                      <h6 className="mb-0">$32.5k</h6>
+                      <small className=" font-publicSans">2022</small>
+                      <h6 className="mb-0 font-publicSans">$32.5k</h6>
                     </div>
                   </div>
                   <div className="flex">
                     <div className="me-2 mt-[-22px]">
                       <span className="badge bg-label-info p-2 ">
-                        <img src={sales} className="w-10 " alt="" />
+                        <img src={sales} className="w-10 font-publicSans " alt="" />
                       </span>
                     </div>
                     <div className="flex flex-col">
-                      <small>2021</small>
-                      <h6 className="mb-0">$41.2k</h6>
+                      <small className=" font-publicSans">2021</small>
+                      <h6 className="mb-0 font-publicSans">$41.2k</h6>
                     </div>
                   </div>
                 </div>

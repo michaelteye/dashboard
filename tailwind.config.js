@@ -8,7 +8,7 @@ module.exports = {
       fontFamily:{
         'Opensans':['Open Sans', 'sans-serif'],
         'publicSans':['Public Sans', 'sans-serif'],
-        
+
       },
       
     },

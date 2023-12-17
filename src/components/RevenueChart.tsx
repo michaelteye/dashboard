@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
 import ApexCharts from 'apexcharts';
+import React, { useEffect, useRef } from 'react';
 import config from '../config/config';
 
 const RevenueChart: React.FC = () => {

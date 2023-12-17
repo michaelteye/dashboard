@@ -261,11 +261,11 @@ const Home = () => {
                 <h2 className="text-xl  text-[#696cff] mb-2 font-Opensans">
                   Congratulations John! 🎉{" "}
                 </h2>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 mb-4 font-Opensans">
                   You have done 72% more sales today. Check your new badge in
                   your profile.
                 </p>
-                <button className="bg-white text-[#696cff] border border-[#696cff] hover:bg-[#696cff] hover:text-white py-1 px-3 rounded-sm text-sm">
+                <button className="bg-white text-[#696cff] font-publicSans border border-[#696cff] hover:bg-[#696cff] hover:text-white py-1 px-3 rounded-sm text-sm">
                   View Badges
                 </button>
               </div>

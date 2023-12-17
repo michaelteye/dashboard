@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
 import ApexCharts from 'apexcharts';
+import { useEffect, useRef } from 'react';
 import config from '../config/config'; // Make sure config is properly imported
 
 const ChartComponent = () => {
