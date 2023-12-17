@@ -2,7 +2,12 @@ import BigCards from "../components/Cards/BigCards";
 import SmallCards from "../components/Cards/SmallCards";
 import Demo2 from "../components/demo2";
 import SectionTwo from "./sectTwo";
+import man from '../components/images/man.png'
+import profile from '../components/images/avators/1.png'
+import Profit from '../components/images/icons/chart-success.png'
+import sales from '../components/images/icons/wallet-info.png'
 
+const images = [Profit, sales]
 const Home = () => {
   return (
     <>
@@ -236,7 +241,7 @@ const Home = () => {
                 <a>
                   <div className="flex items-center justify-center">
                     <img
-                      src="/assets/images/1.png"
+                      src={profile}
                       alt="Avatar"
                       className="rounded-full h-10 w-10"
                     />
@@ -253,7 +258,7 @@ const Home = () => {
           <div className="col-span-8">
             <div className="bg-white   navbarShadow rounded-md flex justify-between flex-wrap">
               <div className="mb-4 w-[55%] p-5">
-                <h2 className="text-xl  text-[#696cff] mb-2">
+                <h2 className="text-xl  text-[#696cff] mb-2 font-Opensans">
                   Congratulations John! 🎉{" "}
                 </h2>
                 <p className="text-gray-700 mb-4">
@@ -267,13 +272,14 @@ const Home = () => {
 
               <div className="pb-0  flex flex-1 justify-center ml-4  items-end">
                 <img
-                  src="/assets/images/man_with_laptop.png"
+                  src={man}
                   alt="Image"
                   className="h-36"
                 />
               </div>
             </div>
           </div>
+          
           <div className="col-span-4 flex gap-x-2">
             {/* Small Card */}
             <SmallCards price='$12,628' percent='-72.80%' title='Profit'/>

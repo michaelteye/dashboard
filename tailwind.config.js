@@ -4,11 +4,15 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
 ],
   theme: {
-    extend: {},
-    fontFamily: {
-      'nunito': ['nunito', 'sans-serif'],
-      'MyFont': ['"My Font"', 'serif'] // Ensure fonts with spaces have " " surrounding it.
-    }
+    extend: {
+      fontFamily:{
+        'Opensans':['Open Sans', 'sans-serif'],
+        'publicSans':['Public Sans', 'sans-serif'],
+        
+      },
+      
+    },
+    
   },
   plugins: [],
 }

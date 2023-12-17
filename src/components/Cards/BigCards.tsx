@@ -1,25 +1,14 @@
 import React from "react";
 import { InfoProps } from "./SmallCards";
+import sales from '../../components/images/icons/wallet-info.png'
 
 const BigCards = ({ title, price, percent }: InfoProps) => {
   return (
     <div className="bg-white w-1/2  p-5 mb-4   navbarShadow rounded-md flex flex-col gap-y-1">
       <div className=" flex items-center justify-between mb-4">
-        <div className="bg-[#e0f7fc] rounded-md   p-2">
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            viewBox="0 0 24 24"
-            style={{ width: 25, height: 25 }}
-          >
-            <path stroke="none" d="M0 0h24v24H0z" />
-            <path d="M17 8V5a1 1 0 00-1-1H6a2 2 0 000 4h12a1 1 0 011 1v3m0 4v3a1 1 0 01-1 1H6a2 2 0 01-2-2V6" />
-            <path d="M20 12v4h-4a2 2 0 010-4h4" />
-          </svg>
-        </div>
+      <div className="g-[#ffe8e5] rounded-lg p-2 w-14">
+          <img src={sales} alt="" className='w-14 bg-[#e7f7eb] rounded-md' style={{ width: 35, height:35 }} />
+      </div>
 
         <svg
           viewBox="0 0 512 512"
