@@ -5,10 +5,9 @@ import SmallCards2 from "../components/Cards/SmallCards2";
 import BigCards2 from "../components/Cards/BigCards2";
 import ProfileReport from "../components/Cards/ProfileReport";
 import sales from "../components/images/icons/wallet-info.png";
-import paypal from "../components/images/icons/paypal.png";
 import DollarSvg from "../components/images/svgs/dollar";
 
-const images = [sales, paypal];
+
 const SectionTwo: React.FC = () => {
   return (
     <div className="grid grid-cols-12 gap-4">

@@ -6,13 +6,13 @@ const ChartComponent = () => {
   const profileReportChartEl = useRef(null);
 
   useEffect(() => {
-    let cardColor, headingColor, axisColor, shadeColor, borderColor;
+
+
 
     // Assuming config is available or imported properly
-    cardColor = config.colors.cardColor;
-    headingColor = config.colors.headingColor;
-    axisColor = config.colors.axisColor;
-    borderColor = config.colors.borderColor;
+    
+
+
     const profileReportChartConfig = {
         chart: {
           height: 80,

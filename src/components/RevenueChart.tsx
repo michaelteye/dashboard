@@ -7,11 +7,10 @@ const RevenueChart: React.FC = () => {
   const totalRevenueChartInstance = useRef<ApexCharts | null>(null);
 
   useEffect(() => {
-    let cardColor, headingColor, axisColor, shadeColor, borderColor;
+    let cardColor, axisColor, borderColor;
 
     // Assuming config is available or imported properly
     cardColor = config.colors.cardColor;
-    headingColor = config.colors.headingColor;
     axisColor = config.colors.axisColor;
     borderColor = config.colors.borderColor;
     const totalRevenueChartOptions: ApexCharts.ApexOptions = {

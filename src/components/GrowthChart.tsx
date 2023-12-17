@@ -28,13 +28,11 @@ const GrowthChart: React.FC = () => {
   const growthChartInstance = useRef<ApexCharts | null>(null);
 
   useEffect(() => {
-    let cardColor, headingColor, axisColor, shadeColor, borderColor;
+    let cardColor, headingColor;
 
     // Assuming config is available or imported properly
     cardColor = config.colors.cardColor;
     headingColor = config.colors.headingColor;
-    axisColor = config.colors.axisColor;
-    borderColor = config.colors.borderColor;
     // Your options here
     const growthChartOptions = {
       series: [78],

@@ -1,13 +1,11 @@
+import { Link } from "react-router-dom";
 import BigCards from "../components/Cards/BigCards";
 import SmallCards from "../components/Cards/SmallCards";
-import Demo2 from "../components/demo2";
+import profile from '../components/images/avators/1.png';
+import man from '../components/images/man.png';
 import SectionTwo from "./sectTwo";
-import man from '../components/images/man.png'
-import profile from '../components/images/avators/1.png'
-import Profit from '../components/images/icons/chart-success.png'
-import sales from '../components/images/icons/wallet-info.png'
 
-const images = [Profit, sales]
+
 const Home = () => {
   return (
     <>
@@ -17,7 +15,7 @@ const Home = () => {
       >
         <aside id="layout-menu" className="flex flex-col gap-y-1">
           <div className="app-brand mt-5">
-            <a href="#" className="flex  px-4 items-center justify-start">
+            <Link to="#" className="flex  px-4 items-center justify-start">
               <span className="">
                 <svg
                   width="22"
@@ -97,12 +95,12 @@ const Home = () => {
               <span className="  tracking-normal text-[1.7rem] font-bold ms-2">
                 sneat
               </span>
-            </a>
+            </Link>
           </div>
 
           <ul className="menu-inner py-1 flex flex-col gap-y-1  text-lg text-gray-500 ">
             <li className="menu-link active h-[2.7rem]">
-              <a className=" active   pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
+              <Link to="#" className=" active   pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -112,11 +110,11 @@ const Home = () => {
                   <path d="M12 17c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
                 </svg>
                 <div data-i18n="Dashboards">Dashboards</div>
-              </a>
+              </Link>
             </li>
 
             <li className="menu-link  h-[3rem]">
-              <a className="   pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
+              <Link to="#" className="   pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -125,22 +123,22 @@ const Home = () => {
                   <path d="M10 4a4 4 0 00-4 4 4 4 0 004 4 4 4 0 004-4 4 4 0 00-4-4m0 2a2 2 0 012 2 2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2m7 6c-.16 0-.24.08-.24.24l-.26 1.26c-.22.18-.54.34-.78.5l-1.28-.5c-.08 0-.24 0-.32.1l-.96 1.76c-.08.08-.08.24.08.32l1.04.82v1l-1.04.82c-.08.08-.16.24-.08.32l.96 1.76c.08.1.24.1.32.1l1.28-.5c.24.16.56.32.78.5l.26 1.26c0 .16.08.24.24.24h2c.08 0 .24-.08.24-.24l.16-1.26c.32-.18.64-.34.88-.5l1.22.5c.14 0 .3 0 .3-.1l1.04-1.76c.08-.08 0-.24-.08-.32l-1.04-.82v-1l1.04-.82c.08-.08.16-.24.08-.32L21.8 13.6c0-.1-.16-.1-.3-.1l-1.22.5c-.24-.16-.56-.32-.88-.5l-.16-1.26c0-.16-.16-.24-.24-.24h-2m-7 1c-2.67 0-8 1.33-8 4v3h9.67c-.28-.59-.48-1.23-.58-1.9H3.9V17c0-.64 3.13-2.1 6.1-2.1.43 0 .87.04 1.3.1.2-.64.47-1.24.82-1.79-.78-.13-1.52-.21-2.12-.21m8.04 2.5c.8 0 1.46.66 1.46 1.54 0 .8-.66 1.46-1.46 1.46-.88 0-1.54-.66-1.54-1.46 0-.88.66-1.54 1.54-1.54z" />
                 </svg>
                 <div data-i18n="Dashboards">Account Settings</div>
-              </a>
+              </Link>
             </li>
 
             <li className="menu-link  h-[3rem] text-gray-400">
-              <a className=" menuHeader  pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
+              <Link to="#" className=" menuHeader  pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
                 <div
                   data-i18n="Dashboards"
                   className="text-[16px] font-semibold"
                 >
                   PAGES
                 </div>
-              </a>
+              </Link>
             </li>
 
             <li className="menu-link  h-[3rem]">
-              <a className="   pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
+              <Link to="" className="   pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
                 <svg
                   viewBox="0 0 900 1000"
                   fill="currentColor"
@@ -149,11 +147,11 @@ const Home = () => {
                   <path d="M800 50c28 0 51.667 9.667 71 29s29 43 29 71v700c0 26.667-9.667 50-29 70s-43 30-71 30H350c-26.667 0-49.667-10-69-30s-29-43.333-29-70V750h98v100h450V150H350v150h-98V150c0-28 9.667-51.667 29-71s42.333-29 69-29h450M450 720V600H0V450h450V330l200 194-200 196" />
                 </svg>
                 <div data-i18n="Dashboards">Login</div>
-              </a>
+              </Link>
             </li>
 
             <li className="menu-link  h-[3rem]">
-              <a className="   pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
+              <Link to="" className="   pt-5 pb-5 pl-[15px] flex items-center justify-start gap-x-3 flex-grow-0 flex-shrink-1 ">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -162,7 +160,7 @@ const Home = () => {
                   <path d="M19 8h-2v3h-3v2h3v3h2v-3h3v-2h-3zM4 8a3.91 3.91 0 004 4 3.91 3.91 0 004-4 3.91 3.91 0 00-4-4 3.91 3.91 0 00-4 4zm6 0a1.91 1.91 0 01-2 2 1.91 1.91 0 01-2-2 1.91 1.91 0 012-2 1.91 1.91 0 012 2zM4 18a3 3 0 013-3h2a3 3 0 013 3v1h2v-1a5 5 0 00-5-5H7a5 5 0 00-5 5v1h2z" />
                 </svg>
                 <div data-i18n="Dashboards">Register</div>
-              </a>
+              </Link>
             </li>
           </ul>
         </aside>
@@ -202,7 +200,7 @@ const Home = () => {
 
             <ul className="navbar-nav flex items-center ms-auto ">
               <li className="flex items-center gap-5">
-                <a>
+                <Link to="#">
                   <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -216,9 +214,9 @@ const Home = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
 
-                <a>
+                <Link to="#">
                   <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -226,9 +224,9 @@ const Home = () => {
                   >
                     <path d="M19 13.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v3.586l-1.707 1.707A.996.996 0 003 16v2a1 1 0 001 1h16a1 1 0 001-1v-2a.996.996 0 00-.293-.707L19 13.586zM19 17H5v-.586l1.707-1.707A.996.996 0 007 14v-4c0-2.757 2.243-5 5-5s5 2.243 5 5v4c0 .266.105.52.293.707L19 16.414V17zm-7 5a2.98 2.98 0 002.818-2H9.182A2.98 2.98 0 0012 22z" />
                   </svg>
-                </a>
+                </Link>
 
-                <a>
+                <Link to="#">
                   <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -236,9 +234,9 @@ const Home = () => {
                   >
                     <path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759L4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605l-1.414 1.414-2.122-2.122 1.414-1.414z" />
                   </svg>
-                </a>
+                </Link>
 
-                <a>
+                <Link to="#">
                   <div className="flex items-center justify-center">
                     <img
                       src={profile}
@@ -246,7 +244,7 @@ const Home = () => {
                       className="rounded-full h-10 w-10"
                     />
                   </div>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
